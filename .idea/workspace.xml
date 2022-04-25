@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3604976-ff77-490e-8ec3-9da3c3ed7c93" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CSE 110/Assignment 03/Strings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,11 +57,22 @@
       <workItem from="1650919036691" duration="771000" />
       <workItem from="1650919820190" duration="231000" />
       <workItem from="1650920059930" duration="1159000" />
-      <workItem from="1650922212592" duration="1678000" />
+      <workItem from="1650922212592" duration="2533000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
