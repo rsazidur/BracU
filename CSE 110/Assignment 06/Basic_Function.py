@@ -121,3 +121,9 @@ sort_list(list_1)
 sort_list(list_2)
 
 """
+my_list = [10, 1, 20, 3, 6, 2, 5, 11, 15, 2, 12, 14, 17, 18, 29]
+
+for idx in range(len(my_list)):
+    print(idx)
+    for idx_2 in range(len(my_list) - 1):
+        print(idx_2)
