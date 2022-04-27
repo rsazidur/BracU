@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d3604976-ff77-490e-8ec3-9da3c3ed7c93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSE 110/Assignment 06/Basic_Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSE 110/Assignment 06/Basic_Function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSE 110/Assignment 07/Sorting.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSE 110/Assignment 07/Sorting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSE 110/Assignment 07/practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/CSE 110/Assignment 07/practice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,29 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Sorting">
+    <configuration name="Sorting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CSE 110/Assignment 07" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CSE 110/Assignment 07/Sorting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,6 +92,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Sorting" />
         <item itemvalue="Python.practice" />
       </list>
     </recent_temporary>
@@ -89,7 +112,9 @@
       <workItem from="1650920059930" duration="1159000" />
       <workItem from="1650922212592" duration="4503000" />
       <workItem from="1650965783268" duration="5012000" />
-      <workItem from="1650978245281" duration="7573000" />
+      <workItem from="1650978245281" duration="18987000" />
+      <workItem from="1651052736690" duration="4881000" />
+      <workItem from="1651088242269" duration="109000" />
     </task>
     <servers />
   </component>
@@ -108,6 +133,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practice$practice.coverage" NAME="practice Coverage Results" MODIFIED="1650982146136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CSE 110/Assignment 07" />
+    <SUITE FILE_PATH="coverage/Practice$Sorting.coverage" NAME="Sorting Coverage Results" MODIFIED="1651056347417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CSE 110/Assignment 07" />
+    <SUITE FILE_PATH="coverage/Practice$practice.coverage" NAME="practice Coverage Results" MODIFIED="1651054259738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CSE 110/Assignment 07" />
   </component>
 </project>

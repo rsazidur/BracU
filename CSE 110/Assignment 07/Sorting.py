@@ -65,7 +65,7 @@ for i in range(len(sitting_list)):
         counter2 += 1
 print(sorted_list)
 
-"""
+
 # 5todo
 Lst = [['Alan', 95, 87, 91], ['Turing', 92, 90, 83], ['Elon', 87, 92, 80], ['Musk', 85, 94, 90]]
 L = ['CSE110', 'PHY111', 'MAT110']
@@ -153,3 +153,21 @@ for j in range(0, len(neg)):
             b = pos[k]
             diff = min
 print(a, b)
+
+
+"""
+# 9todo
+
+list_one = []
+points = [(5, 3), (2, 9), (-2, 7), (-3, -4), (0, 6), (7, -2)]
+import math
+tup = ()
+
+min_dis = math.sqrt((points[0][0] ** 2 + points[0][1] ** 2))
+for item in range(len(points)):
+    minimum = math.sqrt((points[item][0] ** 2 + points[item][1] ** 2))
+    if minimum < min_dis:
+        tup = points[item]
+        min_dis = minimum
+        print("Minimum distance =", min_dis)
+        print(f"Here the closest point is {tup} which has a distance of {min_dis} from the origin.")
