@@ -5,8 +5,8 @@ def pass_check(password):
 
     spec_count = 0
     special_char = "_@$#"
-    for special_char in password:
-        if special_char in password:
+    for spec in password:
+        if spec in special_char:
             spec_count += 1
 
     error = ""
