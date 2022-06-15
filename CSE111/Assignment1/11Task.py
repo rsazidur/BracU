@@ -16,5 +16,5 @@ while user_input != "STOP":
 input_prompt = result.keys()
 input_prompt = sorted(input_prompt)
 
-for i in input_prompt:
-    print(f"{i} - {result[i]} times")
+for value in input_prompt:
+    print(f"{value} - {result[value]} times")
