@@ -1,6 +1,8 @@
 class Player:
     def __init__(self):
-        pass
+        self.name = None
+        self.jersy_number = None
+        self.position = None
 
 
 player1 = Player()
