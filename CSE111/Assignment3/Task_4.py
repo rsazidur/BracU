@@ -1,18 +1,29 @@
 class Vehicle:
-    def __init__(self, up, down, left, right):
-        self.up = up
-        self.down = down
-        self.left = left
-        self.right = right
+    def __init__(self):
+        self.x_axis = 0
+        self.y_axis = 0
 
     def moveUp(self):
-        pass
+        self.y_axis += 1
+
     def moveDown(self):
-        pass
+        self.y_axis -= 1
+
     def moveLeft(self):
-        pass
+        self.x_axis -= 1
+
     def moveRight(self):
-        pass
+        self.y_axis += 1
 
     def print_position(self):
-        pass
+        print(f"({self.x_axis}, {self.y_axis})")
+
+car = Vehicle()
+car.print_position()
+car.moveUp()
+car.print_position()
+car.moveLeft()
+car.print_position()
+car.moveDown()
+car.print_position()
+car.moveRight()
