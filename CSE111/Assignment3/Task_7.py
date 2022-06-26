@@ -11,7 +11,7 @@ class Student:
         for item in self.credit:
             summation += item
         self.cgpa = summation / len(self.credit)
-git
+
     def print_details(self):
         if self.cgpa > 3.80:
             print(f"Name: {self.name}, ID: {self.id}")
