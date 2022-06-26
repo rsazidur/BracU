@@ -1,33 +1,45 @@
 class Calculator:
     def __init__(self):
-        print("Calculator is Ready!")
-        self.first_value = 0
-        self.second_value = 0
+        self.first_value = None
+        self.second_value = None
         self.operator = None
+        print("Calculator is Ready!")
 
-    def calculate(self):
-        val = self.first_value, self.operator
+    def calculate(self, first_value, second_value, operator):
+        self.first_value = first_value
+        self.second_value = second_value
+        self.operator = operator
+
+        if operator == "+":
+            val = first_value + second_value
+            return val
+
+        elif operator == "-":
+            val = first_value - second_value
+            return val
+
+        elif operator == "*":
+            val = first_value * second_value
+            return val
+
+        elif operator == "/":
+            val = first_value / second_value
+            return val
+
     def showCalculation(self):
+
         if self.operator == "+":
-            Calculator.add(self)
+            print(f"{self.first_value} + {self.second_value} = {val}")
+
         elif self.operator == "-":
-            Calculator.subtract(self)
+            print(f"{self.first_value} - {self.second_value} = {val}")
+
         elif self.operator == "*":
-            Calculator.multiply(self)
+            print(f"{self.first_value} * {self.second_value} = {val}")
+
         elif self.operator == "/":
-            Calculator.divide(self)
+            print(f"{self.first_value} / {self.second_value} = {val}")
 
-    def add(self):
-        print(f"Result : {self.first_value + self.second_value}")
-
-    def subtract(self):
-        print(f"Result : {self.first_value - self.second_value}")
-
-    def multiply(self):
-        print(f"Result : {self.first_value * self.second_value}")
-
-    def divide(self):
-        print(f"Result : {self.first_value / self.second_value}")
 
 if __name__ == "__main__":
 
