@@ -17,7 +17,7 @@ a1 = ABC(5, 6)
 a2 = ABC(15, 17)
 
 a1.set_X(45)
+
 print(a1.get_X())
+
 a1.details()
-        
-        
