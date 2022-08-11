@@ -6,7 +6,7 @@ class Student:
         
     def details(self):      # instance variable
         print(f"Name: {self.name} \nID: {self.__id}")
-        self.__method()
+        self.__method()     # private method always work for puplic method
     
     def __method(self):     # private variable
         print("Private method executed.")
