@@ -4,7 +4,7 @@ class Student:
     def __init__(self, name, Id):
         self.name = name
         self.id = Id
-        Student.count += 1
+        Student.count += 1      # It's work on constructor 
         
     def details(self):
         print(f"Name: {self.name} Id: {self.id}")
