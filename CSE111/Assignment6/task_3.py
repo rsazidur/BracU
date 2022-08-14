@@ -11,13 +11,13 @@ class Passenger:
     @staticmethod
     def set_bag_weight(weight):
         if weight <= 20:
-            print(450)
+            return 450
         
         elif weight <= 50:
-            print(450 + 50)
+            return 450 + 50
         
         elif weight > 50:
-            print(450 + 100)    
+            return (450 + 100)    
 
 
 print("Total Passenger:", Passenger.count)

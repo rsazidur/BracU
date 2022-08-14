@@ -8,7 +8,7 @@ class Student:
         self.dept = dept
         self.uni = uni
         Student.t_student += 1
-        if self.uni == "None":
+        if self.uni != "Brac University":
             Student.o_student += 1
         else:
             Student.b_student += 1
