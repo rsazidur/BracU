@@ -12,12 +12,12 @@ class Employee:
     def experienceCheck(workingPeriod, gender):
         if workingPeriod < 3 and gender == "male":
             return("He is not experienced")
-        elif workingPeriod >= 2  and gender == "male":
+        elif workingPeriod >= 3  and gender == "male":
             return("He is experienced")
         
         elif workingPeriod < 3 and gender == "female":
             return("She is not experienced")
-        elif workingPeriod >= 2  and gender == "female":
+        elif workingPeriod >= 3  and gender == "female":
             return("She is experienced")
 
 
