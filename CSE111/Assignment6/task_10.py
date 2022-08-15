@@ -1,57 +1,61 @@
 class SultansDine:
-    branches = 0
-    total_sell = 0
-    branch_list = []
 
-    def __init__(self, name, branch_sell=0):
-        self.name = name
-        self.sell = branch_sell
-        SultansDine.branch_list.append(self.name)
-        SultansDine.branches += 1
+    total_branch = 0
+    total_sell = 0
+    branch_info = []
+
+    def __init__(self, branch):
+        self.name = branch
+        SultansDine.total_branch += 1
 
     def sellQuantity(self, quantity):
+
         if quantity < 10:
-            branch_sell = int(quantity) * 300
-        elif quantity < 20:  
-            branch_sell = int(quantity) * 350
+            self.branch_sell = quantity * 300
+        elif quantity < 20:
+            self.branch_sell = quantity * 350
         else:
-            branch_sell = int(quantity) * 400
-        
-        self.branch_sell = branch_sell
-        SultansDine.total_sell += branch_sell
-        SultansDine.branch_list[len(SultansDine.branch_list)-1].append(self.branch_sell)
+            self.branch_sell = quantity * 400
 
-    def branchInformation(self):
-        print(f'Branch Name: {self.name}\nBranch Sell: {self.branch_sell} Taka')
-
-    @classmethod
-    def branch_details(cls):
-        for i in SultansDine.branch_list:
-            print(f'Branch Name: {i[0]}\nBranch consists of total sell\'s: {(i[1]/SultansDine.total_sell) * 100}')
+        SultansDine.total_sell += self.branch_sell
     
+    def branchInformation(self):
+        print(f"Branch Name: {self.name}")
+        print(f"Branch Sell: {self.branch_sell}")
+
+        SultansDine.branch_info.append(self.name)
+        SultansDine.branch_info.append(self.branch_sell)
+
     @classmethod
     def details(cls):
-        print(f"Total Number of branch(s): {SultansDine.branches}")
-        print(f"Total Sell: {SultansDine.total_sell} Taka")
-        SultansDine.branch_details()
+        print(f"Total Number of branch(s): {cls.total_branch}")
+        print(f"Total Sell: {cls.total_sell}")
+
+        for index in range(0, len(SultansDine.branch_info), 2):
+            print(
+                f"Branch Name: {SultansDine.branch_info[index]}, Branch Sell: {SultansDine.branch_info[index + 1]} Taka"
+            )
+            print(
+                f"Branch consists of total sell's: {(SultansDine.branch_info[index + 1] / SultansDine.total_sell) * 100:.2f}%"
+            )
 
 
 SultansDine.details()
-print('########################')
-dhanmodi = SultansDine('Dhanmondi')
+print("########################")
+dhanmodi = SultansDine("Dhanmondi")
 dhanmodi.sellQuantity(25)
 dhanmodi.branchInformation()
-print('-----------------------------------------')
+print("-----------------------------------------")
 SultansDine.details()
-print('========================')
-baily_road = SultansDine('Baily Road')
+print("========================")
+baily_road = SultansDine("Baily Road")
 baily_road.sellQuantity(15)
 baily_road.branchInformation()
-print('-----------------------------------------')
+print("-----------------------------------------")
 SultansDine.details()
-print('========================')
-gulshan = SultansDine('Gulshan')
+print("========================")
+gulshan = SultansDine("Gulshan")
 gulshan.sellQuantity(9)
 gulshan.branchInformation()
-print('-----------------------------------------')
+print("-----------------------------------------")
 SultansDine.details()

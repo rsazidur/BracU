@@ -1,23 +1,26 @@
 class Passenger:
+
     count = 0
-    
+
     def __init__(self, name):
         self.name = name
         Passenger.count += 1
-        
+
+    def set_bag_weight(self, weight):
+        self.weight = weight
+
+        if weight < 20:
+            self.fare = 450
+
+        elif weight >= 21 and weight <= 50:
+            self.fare = 500
+
+        else:
+            self.fare = 550
+
     def printDetail(self):
-        print("Name:", self.name, "\nBus Fare:", Passenger.set_bag_weight)
-    
-    @staticmethod
-    def set_bag_weight(weight):
-        if weight <= 20:
-            return 450
-        
-        elif weight <= 50:
-            return 450 + 50
-        
-        elif weight > 50:
-            return (450 + 100)    
+        print(f"Name: {self.name}")
+        print(f"Bus Fare: {self.fare}")
 
 
 print("Total Passenger:", Passenger.count)
