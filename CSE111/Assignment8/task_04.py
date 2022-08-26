@@ -33,7 +33,7 @@ class Mango(Fruit, testFruit):
 class Jackfruit(Fruit, testFruit):
     def __init__(self, name="Jackfruit", formalin=False):
         super().__init__(formalin, name)
-
+        
     def __str__(self):
         if self.hasFormalin == True:
             return f"{self.getName}'s are bad for you"
