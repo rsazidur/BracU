@@ -6,6 +6,7 @@ class PlayerEarning:
         self.salary = salary
         self.goal = goal
         self.bonus = 0
+        
         if self.goal > 30:
             self.bonus = int((5/100) * self.salary + 10000)
         else:
